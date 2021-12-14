@@ -19,11 +19,11 @@ st.title("Statistik Produksi Minyak")
 image = Image.open('blackoil.png')
 st.sidebar.image(image)
 
-st.sidebar.title("Pengaturan")
+st.sidebar.title("Settings")
 left_col, mid_col, right_col = st.columns(3)
 
 ## User inputs on the control panel
-st.sidebar.subheader("Pengaturan konfigurasi tampilan")
+st.sidebar.subheader("Display configuration settings")
 list_bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 bulan = st.sidebar.selectbox("Pilih bulan", list_bulan)
 list_url = {'Januari': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/1a3bcf20-1ed0-42c9-baca-71cdabbe7fdc/download/Data-Penumpang-Bus-Transjakarta-Januari-2019.csv',
@@ -40,8 +40,8 @@ list_url = {'Januari': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82
             'Desember': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv'
            }
 
-n_tampil = st.sidebar.number_input("Jumlah baris dalam tabel yang ditampilkan", min_value=1, max_value=None, value=10)
+n_tampil = st.sidebar.number_input("Number of rows in the table shown", min_value=1, max_value=None, value=10)
 ############### sidebar ###############
 
 ############### upper left column ###############
-left_col.subheader("Tabel representasi data")
+left_col.subheader("Data representation table")
