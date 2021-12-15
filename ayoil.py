@@ -67,6 +67,8 @@ for i in df1.loc():
     if urutan==5839:break
 df1
 
+df2=df1.loc[df1['kode_negara']=='Australia']
+
 #Negara
 st.markdown('Negara')
 negara_unik = list(df1['kode_negara'].unique())
