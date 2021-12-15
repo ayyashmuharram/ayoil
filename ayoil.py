@@ -85,5 +85,5 @@ tulis_negara = ' '.join(map(str, tulis_negara))
 tulis_negara
 
 df3 = pd.read_csv("medali.csv")
-print(df3)
+df3
 
