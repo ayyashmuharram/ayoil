@@ -30,3 +30,21 @@ df = pd.read_csv("produksi_minyak_mentah.csv")
 
 file_json = open("kode_negara_lengkap.json")
 data = json.loads(file_json.read())
+
+urutan=0
+for i in df1.loc():
+    urutan2=0
+    for j in data:
+        kode1=(df1.loc[urutan,"kode_negara"])
+        kode2=data[urutan2]['alpha-2']
+        kode3=data[urutan2]['alpha-3']
+        #print("kode 1 adalah",kode1)
+        #print("kode 2 adalah",kode2)
+        #print("kode 3 adalah",kode3)
+        if kode1==kode2 or kode1==kode3:
+            df1.loc[urutan,"kode_negara"]=data[urutan2]['name']
+            #print('negara berubah menjadi',df1.loc[urutan,"kode_negara"])
+        #print("ini adalah urutan kode negara",urutan,"dan urutan json",urutan2)
+        urutan2=urutan2+1
+    urutan=urutan+1
+    if urutan==5839:break
