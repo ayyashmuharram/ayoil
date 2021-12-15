@@ -66,8 +66,7 @@ for i in df1.loc():
     urutan=urutan+1
     if urutan==5839:break
 
-if angka == 1:
-  df1
+if angka == 1:df1
 
 
 #Negara
