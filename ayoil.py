@@ -22,7 +22,7 @@ st.title("Statistik Jumlah Produksi Minyak")
 image = Image.open('blackoil.png')
 st.sidebar.image(image)
 
-st.sidebar.title("Pengaturan")
+st.sidebar.title("Pilihan")
 left_col, mid_col, right_col = st.columns(3)
 
 # read dataset
