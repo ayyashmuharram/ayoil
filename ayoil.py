@@ -40,13 +40,13 @@ data = json.loads(file_json.read())
 #print(type(df1))
 #print(len(data))
 
-'''
+
 #apakah json bisa iterasi
-urutan=0
-for i in data:
-    print(data[urutan]['alpha-3'],data[urutan]['name'])
-    urutan=urutan+1
-'''
+#urutan=0
+#for i in data:
+#    print(data[urutan]['alpha-3'],data[urutan]['name'])
+#   urutan=urutan+1
+
 urutan=0
 for i in df1.loc():
     urutan2=0
@@ -82,3 +82,10 @@ list_url = {'Januari': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82
             'November': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/14520801-0674-4334-89bc-a1f1a94257b7/download/Data-Penumpang-Bus-Transjakarta-November-2019.csv', 
             'Desember': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv'
            }
+
+n_tampil = st.sidebar.number_input("Jumlah baris dalam tabel yang ditampilkan", min_value=1, max_value=None, value=10)
+############### sidebar ###############
+
+############### upper left column ###############
+left_col.subheader("Tabel representasi data")
+
