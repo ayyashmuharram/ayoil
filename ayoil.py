@@ -27,12 +27,12 @@ left_col, mid_col, right_col = st.columns(3)
 
 list_statistik = ['Mentah', 'Negara', 'Tahun', 'Negara Terbesar', 'Negara Terkecil', 'Negara Kosong']
 bulan = st.sidebar.selectbox("Pilih Statistik", list_statistik)
-list_pilihan = {'Mentah': 
-                'Negara': 
-                'Tahun': 
-                'Negara Terbesar': 
-                'Negara Terkecil': 
-                'Negara Kosong': 
+list_pilihan = {'Mentah':, 
+                'Negara':,
+                'Tahun':,
+                'Negara Terbesar', 
+                'Negara Terkecil',
+                'Negara Kosong':,
                 }
 
 # read dataset
