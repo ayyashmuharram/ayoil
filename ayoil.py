@@ -90,7 +90,7 @@ print(df3.loc[df3["bronze"] == 0])
 
 total_produksi = []
 for negara in negara_unik:
-    jumlah_produksi = df1[df1['kode_negara']==negara]['produksi'].str.replace(",", "").astype(int)
+    jumlah_produksi = df1.loc[0,['kode_negara']==negara]['produksi']
     total_produksi.append(jumlah_produksi.sum())
 print(f"Total produksi: {total_produksi}")
 
