@@ -14,10 +14,16 @@ from PIL import Image
 
 ############### title ###############
 st.set_page_config(layout="wide")  # this needs to be the first Streamlit command called
-st.title("Statistik Jumlah Penumpang TransJakarta Tahun 2019")
-st.markdown("*Sumber data berasal dari [Jakarta Open Data](https://data.jakarta.go.id/dataset/data-jumlah-penumpang-trans-jakarta-tahun-2019-kpi)*")
+st.title("Statistik Jumlah Produksi Minyak")
+st.markdown("*Sumber data dari nggatau")
 ############### title ###############)
 
 ############### sidebar ###############
 image = Image.open('blackoil.png')
 st.sidebar.image(image)
+
+# read dataset
+#filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
+filepath = 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv'
+df = pd.read_csv(filepath)
+df
