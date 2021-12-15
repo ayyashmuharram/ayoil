@@ -66,9 +66,6 @@ for i in df1.loc():
     urutan=urutan+1
     if urutan==5839:break
 
-df1.loc[df1['kode_negara']=='AUS'].plot(kind="bar",x="tahun",y="produksi",title="Produksi Minyak Mentah per Tahun", grid=True, xlabel="nama orang")
-plt.show()
-  
 #Negara
 st.markdown('Negara')
 negara_unik = list(df1['kode_negara'].unique())
