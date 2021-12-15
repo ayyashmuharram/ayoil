@@ -25,8 +25,10 @@ st.sidebar.image(image)
 st.sidebar.title("Pilihan")
 left_col, mid_col, right_col = st.columns(3)
 
+st.sidebar.subheader("Pengaturan konfigurasi tampilan")
 Statistik = st.sidebar.selectbox("Pilih Statistik", list_statistik)
 list_statistik = ['Negara', 'Negara Terbesar', 'Negara Terkecil']
+n_tampil = st.sidebar.number_input("Jumlah baris dalam tabel yang ditampilkan", min_value=1, max_value=None, value=10)
 
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
