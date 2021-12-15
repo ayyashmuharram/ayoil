@@ -52,7 +52,8 @@ left_col.subheader("Tabel representasi data")
 filepath = list_url[bulan]
 df = pd.read_csv(filepath)
 
-df2 = pd.read_csv(produksi_minyak_mentah.csv)
+filepath2 = produksi_minyak_mentah.csv
+df2 = pd.read_csv(filepath2)
 
 left_col.dataframe(df.head(n_tampil))
 ############### upper left column ###############
