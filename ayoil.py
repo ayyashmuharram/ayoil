@@ -16,12 +16,14 @@ import json
 ############### title ###############
 st.set_page_config(layout="wide")  # this needs to be the first Streamlit command called
 st.title("Statistik Jumlah Produksi Minyak")
-st.markdown("*Sumber data dari nggatau")
 ############### title ###############)
 
 ############### sidebar ###############
 image = Image.open('blackoil.png')
 st.sidebar.image(image)
+
+st.sidebar.title("Pengaturan")
+left_col, mid_col, right_col = st.columns(3)
 
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
