@@ -26,7 +26,7 @@ st.sidebar.title("Pilihan")
 left_col, mid_col, right_col = st.columns(3)
 
 Statistik = st.sidebar.selectbox("Pilih Statistik", list_statistik)
-
+list_statistik = ['Negara', 'Negara Terbesar', 'Negara Terkecil']
 
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
