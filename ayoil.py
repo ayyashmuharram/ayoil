@@ -25,6 +25,9 @@ st.sidebar.image(image)
 st.sidebar.title("Pilihan")
 left_col, mid_col, right_col = st.columns(3)
 
+Statistik = st.sidebar.selectbox("Pilih Statistik", list_statistik)
+
+
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
 #filepath = 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv'
