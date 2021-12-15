@@ -68,6 +68,7 @@ for i in df1.loc():
 df1
 
 df2=df1.loc[df1['kode_negara']=='Australia']
+df2.plot(kind="bar",x="tahun",y="produksi",title="Produksi Minyak Mentah per Tahun", grid=True, xlabel="Tahun")
 plt.show()
 
 #Negara
