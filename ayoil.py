@@ -68,6 +68,7 @@ for i in df1.loc():
 df1
 
 df2=df1.loc[df1['kode_negara']=='Australia']
+plt.show()
 
 #Negara
 st.markdown('Negara')
