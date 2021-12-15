@@ -67,6 +67,9 @@ for i in df1.loc():
     if urutan==5839:break
 df1
 
+df1.plot(kind="bar",x="tahun",y="produksi",title="Produksi Minyak Mentah per Tahun", grid=True, xlabel="Tahun")
+plt.show()
+
 df2=df1.loc[df1['kode_negara']=='Australia']
 df2.plot(kind="bar",x="tahun",y="produksi",title="Produksi Minyak Mentah per Tahun", grid=True, xlabel="Tahun")
 plt.show()
