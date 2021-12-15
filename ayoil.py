@@ -25,8 +25,8 @@ st.sidebar.image(image)
 st.sidebar.title("Pilihan")
 left_col, mid_col, right_col = st.columns(3)
 
-list_bulan = ['Negara', 'Tahun', 'Negara Terbesar', 'Negara Terkecil', 'Negara kosong']
-bulan = st.sidebar.selectbox("Pilih Statistik", list_bulan)
+list_statistik = ['Negara', 'Tahun', 'Negara Terbesar', 'Negara Terkecil', 'Negara kosong']
+bulan = st.sidebar.selectbox("Pilih Statistik", list_statistik)
 list_url = {'Januari': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/1a3bcf20-1ed0-42c9-baca-71cdabbe7fdc/download/Data-Penumpang-Bus-Transjakarta-Januari-2019.csv',
             'Februari': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/849e203a-ca5d-47d6-9024-1e753ca405ad/download/Data-Penumpang-Bus-Transjakarta-Februari-2019.csv', 
             'Maret': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/c7cea037-4306-4d3c-aabd-382798bf88ff/download/Data-Penumpang-Bus-Transjakarta-Maret-2019.csv', 
