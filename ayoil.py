@@ -50,3 +50,14 @@ for i in df1.loc():
     if urutan==5839:break
 
 df1
+
+negara_unik = list(df1['kode_negara'].unique())
+print(f"Negara: {negara_unik}")
+total_produksi = []
+for negara in negara_unik:
+    jumlah_produksi = df1[df1['kode_negara']==negara]['produksi'].str.replace(",", "").astype(int)
+    total_produksi.append(jumlah_produksi.sum())
+print(f"Total produksi: {total_produksi}")
+
+max_produksi = np.asarray(jumlah_produksi).max()
+max_produksi_idx = np.asarray(jumlah_produksi).max()
