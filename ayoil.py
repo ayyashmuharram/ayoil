@@ -67,14 +67,13 @@ for i in df1.loc():
     if urutan==5839:break
 
 if angka == 1:df1
-
-
-#Negara
-mid_col.subheader("Negara")
-negara_unik = list(df1['kode_negara'].unique())
-print(f"Negara unik: {negara_unik}")
-tulis_negara = []
-for i, negara in enumerate(negara_unik):
-    tulis_negara.append(f"{str(i+1)}. {negara}\n")
-tulis_negara = ' '.join(map(str, tulis_negara))
-tulis_negara
+if angka == 2:
+  #Negara
+  mid_col.subheader("Negara")
+  negara_unik = list(df1['kode_negara'].unique())
+  print(f"Negara unik: {negara_unik}")
+  tulis_negara = []
+  for i, negara in enumerate(negara_unik):
+      tulis_negara.append(f"{str(i+1)}. {negara}\n")
+  tulis_negara = ' '.join(map(str, tulis_negara))
+  tulis_negara
