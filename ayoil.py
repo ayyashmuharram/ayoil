@@ -63,9 +63,10 @@ for i in df1.loc():
 
 df1
 
+#Negara
+mid_col.subheader("Negara")
 negara_unik = list(df1['kode_negara'].unique())
 print(f"Negara unik: {negara_unik}")
-
 tulis_negara = []
 for i, negara in enumerate(negara_unik):
     tulis_negara.append(f"{str(i+1)}. {negara}\n")
