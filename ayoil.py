@@ -40,7 +40,7 @@ list_url = {'Januari': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82
             'September': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/04e2b099-2d2c-47d5-bddd-3b0d092fbdae/download/Data-Penumpang-Bus-Transjakarta-September-2019.csv', 
             'Oktober': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/b37e5a6f-9b98-443b-bb5f-bdba288cf7e3/download/Data-Penumpang-Bus-Transjakarta-Oktober-2019.csv', 
             'November': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/14520801-0674-4334-89bc-a1f1a94257b7/download/Data-Penumpang-Bus-Transjakarta-November-2019.csv', 
-            'Desember': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv'
+            'Desember': 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv',
             'minyak': 'https://github.com/ayyashmuharram/ayoil/blob/main/produksi_minyak_mentah.csv'
            }
 
