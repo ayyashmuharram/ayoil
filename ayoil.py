@@ -87,3 +87,18 @@ tulis_negara
 df3 = pd.read_csv("medali.csv")
 df3
 print(df3.loc[df3["bronze"] == 0])
+
+total_produksi = []
+for negara in negara_unik:
+    jumlah_produksi = df1[df1['kode_negara']==negara]['produksi'].str.replace(",", "").astype(int)
+    total_produksi.append(jumlah_produksi.sum())
+print(f"Total produksi: {total_produksi}")
+
+#fig, ax = plt.subplots()
+#ax.barh(negara unik_unik, total_penumpang, color=colors)
+#ax.set_yticklabels(jenis_unik, rotation=0)
+#ax.invert_yaxis()  # labels read top-to-bottom
+#ax.set_xlabel("Total jumlah penumpang", fontsize=12)
+#ax.set_title("Statistik Transjakarta Desember 2019")
+#plt.show()
+
