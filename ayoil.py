@@ -18,8 +18,6 @@ st.title("Statistik Jumlah Penumpang TransJakarta Tahun 2019")
 st.markdown("*Sumber data berasal dari [Jakarta Open Data](https://data.jakarta.go.id/dataset/data-jumlah-penumpang-trans-jakarta-tahun-2019-kpi)*")
 ############### title ###############)
 
-print('APA BISAAA')
-
 ############### sidebar ###############
 image = Image.open('blackoil.png')
 st.sidebar.image(image)
@@ -54,7 +52,12 @@ left_col.subheader("Tabel representasi data")
 filepath = list_url[bulan]
 df = pd.read_csv(filepath)
 
+df2 = pd.read_csv(produksi_minyak_mentah.csv)
+
 left_col.dataframe(df.head(n_tampil))
+############### upper left column ###############
+
+left_col.dataframe(df2.head(n_tampil))
 ############### upper left column ###############
 
 ############### upper middle column ###############
