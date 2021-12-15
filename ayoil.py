@@ -67,10 +67,9 @@ for i in df1.loc():
     if urutan==5839:break
 
 df1
-st.markdown('Bisa ngga sih muncul')
   
 #Negara
-mid_col.subheader("Negara")
+st.markdown('Negara')
 negara_unik = list(df1['kode_negara'].unique())
 print(f"Negara unik: {negara_unik}")
 tulis_negara = []
