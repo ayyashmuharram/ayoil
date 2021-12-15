@@ -65,8 +65,9 @@ for i in df1.loc():
     urutan=urutan+1
     if urutan==5839:break
 
-If 
-df1
+If angka==1:
+  df1
+
 
 #Negara
 mid_col.subheader("Negara")
