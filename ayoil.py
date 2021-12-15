@@ -38,6 +38,7 @@ list_pilihan = {'Mentah':'1',
 
 filepath = list_pilihan[pilihan]
 angka=filepath
+st.markdown(angka)
 
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
