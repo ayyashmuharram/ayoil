@@ -86,4 +86,4 @@ tulis_negara
 
 df3 = pd.read_csv("medali.csv")
 df3
-
+print(df3.loc[df3["bronze"] == 0])
