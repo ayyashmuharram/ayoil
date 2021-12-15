@@ -26,7 +26,7 @@ st.sidebar.image(image)
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
 #filepath = 'https://data.jakarta.go.id/dataset/50b36c4b-0aed-42a5-82e4-c3510475716a/resource/4c3be51b-6ae9-44cc-9b42-616b4c982614/download/Data-Penumpang-Bus-Transjakarta-Desember-2019.csv'
-df = pd.read_csv("produksi_minyak_mentah.csv")
+df1 = pd.read_csv("produksi_minyak_mentah.csv")
 
 file_json = open("kode_negara_lengkap.json")
 data = json.loads(file_json.read())
