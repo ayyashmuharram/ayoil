@@ -53,11 +53,3 @@ df1
 
 negara_unik = list(df1['kode_negara'].unique())
 print(f"Negara unik: {negara_unik}")
-produksi = []
-for negara in negara_unik:
-    produksi = df1[df1['kode_negara']==kode_negara]['produksi'].str.replace(",", "").astype(int)
-    produksi.append(produksi.sum())
-print(f"Total Produksi: {produksi}")
-
-max_produksi = np.asarray(produksi).max()
-max_produksi_idx = np.asarray(produksi).max()
