@@ -65,6 +65,7 @@ for i in df1.loc():
         urutan2=urutan2+1
     urutan=urutan+1
     if urutan==5839:break
+df1
 
 #Negara
 st.markdown('Negara')
