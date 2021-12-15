@@ -25,15 +25,19 @@ st.sidebar.image(image)
 st.sidebar.title("Pilihan")
 left_col, mid_col, right_col = st.columns(3)
 
-list_statistik = ['Mentah', 'Negara', 'Tahun', 'Negara Terbesar', 'Negara Terkecil', 'Negara Kosong']
-bulan = st.sidebar.selectbox("Pilih Statistik", list_statistik)
-list_pilihan = {'Mentah':'', 
-                'Negara':'',
-                'Tahun':'',
-                'Negara Terbesar':'', 
-                'Negara Terkecil':'',
-                'Negara Kosong':'',
+list_statistik = ['Mentah', 'Negara', 'Tahun', 'Negara Terbesar', 'Negara Terkecil', 'Negara Kosong', 'Data Negara']
+pilihan = st.sidebar.selectbox("Pilih Statistik", list_statistik)
+list_pilihan = {'Mentah':'1', 
+                'Negara':'2',
+                'Tahun':'3',
+                'Negara Terbesar':'4', 
+                'Negara Terkecil':'5',
+                'Negara Kosong':'6',
+                'Data Negara':'7',
                 }
+
+filepath = list_pilihan[pilihan]
+angka=filepath
 
 # read dataset
 #filepath = "data-penumpang-bus-transjakarta-desember-2019.csv"
@@ -61,6 +65,7 @@ for i in df1.loc():
     urutan=urutan+1
     if urutan==5839:break
 
+If 
 df1
 
 #Negara
