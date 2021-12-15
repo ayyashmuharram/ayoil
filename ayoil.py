@@ -68,6 +68,7 @@ for i in df1.loc():
 
 if angka == 1:df1
 if angka == 2:st.markdown('Bisa ngga sih muncul')
+if angka == 3:
   #Negara
   mid_col.subheader("Negara")
   negara_unik = list(df1['kode_negara'].unique())
