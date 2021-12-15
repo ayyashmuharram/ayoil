@@ -18,6 +18,8 @@ st.title("Statistik Jumlah Penumpang TransJakarta Tahun 2019")
 st.markdown("*Sumber data berasal dari [Jakarta Open Data](https://data.jakarta.go.id/dataset/data-jumlah-penumpang-trans-jakarta-tahun-2019-kpi)*")
 ############### title ###############)
 
+print('APA BISAAA')
+
 ############### sidebar ###############
 image = Image.open('blackoil.png')
 st.sidebar.image(image)
