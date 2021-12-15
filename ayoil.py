@@ -66,7 +66,6 @@ for i in df1.loc():
     urutan=urutan+1
     if urutan==5839:break
 
-df1 = pd.read_csv("produksi_minyak_mentah.csv")
 print(df1.loc[df1['kode_negara']=='AUSTRALIA'])
 df1.loc[df1['kode_negara']=='AUSTRALIA'].plot(kind="bar",x="tahun",y="produksi",title="Produksi Minyak Mentah per Tahun", grid=True, xlabel="nama orang")
 plt.show()
