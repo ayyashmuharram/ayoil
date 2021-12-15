@@ -83,3 +83,7 @@ for i, negara in enumerate(negara_unik):
   tulis_negara.append(f"{str(i+1)}. {negara}\n")
 tulis_negara = ' '.join(map(str, tulis_negara))
 tulis_negara
+
+df3 = pd.read_csv("medali.csv")
+print(df3)
+
