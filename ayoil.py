@@ -53,3 +53,9 @@ df1
 
 negara_unik = list(df1['kode_negara'].unique())
 print(f"Negara unik: {negara_unik}")
+
+tulis_negara = []
+for i, negara in enumerate(negara_unik):
+    tulis_negara.append(f"{str(i+1)}. {negara}\n")
+tulis_negara = ' '.join(map(str, tulis_negara))
+tulis_negara
